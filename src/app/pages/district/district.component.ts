@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { HeroService } from 'src/app/hero.service';
-import { districts } from 'src/assets/data/data';
+import { district } from 'src/assets/data/data';
 
 @Component({
   selector: 'app-district',
@@ -10,7 +10,7 @@ import { districts } from 'src/assets/data/data';
 })
 export class DistrictComponent {
   constructor(private hero:HeroService ,private Router:Router){}
-  districts=this.hero.getData()
+  district=this.hero.getData()
     
   gotohere(id:any){
     localStorage.setItem('id',id)

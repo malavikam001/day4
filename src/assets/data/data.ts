@@ -1,4 +1,4 @@
-export const districts=[
+export const district=[
     {
         "id":1,
     "name":"thiruvanathapuram",

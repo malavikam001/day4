@@ -8,10 +8,10 @@ import { HeroService } from 'src/app/hero.service';
 })
 export class SingledistrictComponent {
 single:any
-constructor(private hero:HeroService){}
+constructor(private district:HeroService){}
 ngoninit():void{
   let pageId=localStorage.getItem('id');
-  let singleDataArray=this.hero.getData();
+  let singleDataArray=this.district.getData();
   this.single=singleDataArray.filter(e=>e.name===pageId)
   console.log(this.single)
 }
